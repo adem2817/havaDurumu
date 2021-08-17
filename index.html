@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hava Durumu</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="./havadurumu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+<div class="app">
+    <div class="header">
+       <h1>Hava Durumu</h1>
+        <input type="text" id="ulke" placeholder="Ülke Kodu Giriniz (tr, en, ...)">
+        <input type="text" id="sehir" placeholder="Şehir Giriniz">
+        <button class="button" onclick="makeRequest()">SONUÇ GÖR</button>
+        <br/>
+    </div>
+        
+    <div class="content">
+        <div id="city" class="city">Şehir İsmi</div>
+        <div id="temp" class="temp">-&#8451</div>
+        <div id="desc" class="desc">Açıklama</div>
+        <div id="minmax" class="minmax">-&#8451 / -&#8451</div>
+    </div>
+</div>
+</body>
+</html>
+
